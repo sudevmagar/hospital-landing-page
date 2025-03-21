@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -45,7 +46,7 @@ export default function DoctorsSection() {
             variants={cardVariants}
           >
             <div className="flex justify-center">
-              <img
+              <Image
                 src={`/image/${doctor.img}`}
                 alt={doctor.name}
                 className="h-40 w-40 rounded-md border-2 border-[#16a085] my-4 object-cover"
