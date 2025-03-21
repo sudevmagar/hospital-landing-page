@@ -1,3 +1,4 @@
+// app/components/ReviewSection.js
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,7 +11,7 @@ const cardVariants = {
     transition: {
       duration: 0.5,
       ease: "easeOut",
-      delay: idx * 0.2, 
+      delay: idx * 0.2,
     },
   }),
 };
@@ -46,7 +47,7 @@ const ReviewSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        client's <span className="text-[#16a085]">review</span>
+        client&apos;s <span className="text-[#16a085]">review</span>
       </motion.h3>
       <div className="grid grid-cols-1 gap-8 max-w-[1440px] mx-auto md:grid-cols-3">
         {reviewData.map((review, index) => (
@@ -65,8 +66,8 @@ const ReviewSection = () => {
             <Image
               src={review.image}
               alt={review.name}
-              width={0}
-              height={0}
+              width={128} // 8rem = 128px
+              height={128} // 8rem = 128px
               className="w-[8rem] h-[8rem] rounded-full object-cover border-[0.4rem] border-white mx-auto mt-3"
               onError={(e) => {
                 console.error(`Failed to load image: ${review.image}`);
