@@ -48,8 +48,8 @@ export default function DoctorsSection() {
             <div className="flex justify-center">
               <Image
                 src={`/image/${doctor.img}`}
-                height={0}
-                width={0}
+                height={100}
+                width={100}
                 alt={doctor.name}
                 className="h-40 w-40 rounded-md border-2 border-[#16a085] my-4 object-cover"
               />
