@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Hospital Landing Page",
+  title: "Hospital",
   description: "A hospital landing page built with Next.js and Tailwind CSS",
 };
 
