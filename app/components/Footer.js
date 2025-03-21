@@ -1,3 +1,4 @@
+
 export default function Footer() {
     return (
       <section className="px-6 py-12 bg-white md:px-24">

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -61,9 +62,11 @@ const ReviewSection = () => {
             {/* Green semi-circle taking half the card height */}
             <div className="absolute top-[1.5rem] left-1/2 -translate-x-1/2 bg-[#16a085] h-[14rem] w-[140%] rounded-b-[50%] -z-[1]"></div>
 
-            <img
+            <Image
               src={review.image}
               alt={review.name}
+              width={0}
+              height={0}
               className="w-[8rem] h-[8rem] rounded-full object-cover border-[0.4rem] border-white mx-auto mt-3"
               onError={(e) => {
                 console.error(`Failed to load image: ${review.image}`);

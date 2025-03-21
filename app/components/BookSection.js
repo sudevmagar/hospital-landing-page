@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const contentVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -26,7 +27,7 @@ export default function BookSection() {
           viewport={{ once: true }}
           variants={contentVariants}
         >
-          <img src="/image/book-img.svg" alt="Book" className="w-full" />
+          <Image width={0} height={0} src="/image/book-img.svg" alt="Book" className="w-full" />
         </motion.div>
         <motion.form
           className="flex-1 min-w-[300px] bg-white p-6 rounded-md shadow-md border-2 border-[#16a085] text-center"

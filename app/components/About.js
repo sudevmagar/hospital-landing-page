@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const contentVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -26,7 +27,7 @@ export default function About() {
           viewport={{ once: true }}
           variants={contentVariants}
         >
-          <img src="/image/about-img.svg" alt="About" className="w-full" />
+          <Image width={0} height={0} src="/image/about-img.svg" alt="About" className="w-full" />
         </motion.div>
         <motion.div
           className="flex-1 min-w-[300px]"

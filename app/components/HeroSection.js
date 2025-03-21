@@ -1,8 +1,10 @@
+"use client"
+import Image from "next/image";
 export default function HeroSection() {
     return (
       <section id="home" className="flex flex-wrap items-center gap-6 px-6 md:px-24">
         <div className="flex-1 min-w-[300px]">
-          <img src="/image/home-img.svg" alt="Home" className="w-full" />
+          <Image width={0} height={0} src="/image/home-img.svg" alt="Home" className="w-full" />
         </div>
         <div className="flex-1 min-w-[300px]">
           <h3 className="text-3xl font-bold text-[#444] drop-shadow-lg md:text-4xl">
