@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function HeroSection() {
     return (
-      <section id="home" className="flex flex-wrap items-center gap-6 px-6 md:px-24">
+      <section id="home" className="flex flex-wrap items-center mt-8 pt-12 gap-6 px-6 md:px-24">
         <div className="flex-1 min-w-[300px]">
           <Image width={0} height={0} src="/image/home-img.svg" alt="Home" className="w-full" />
         </div>
